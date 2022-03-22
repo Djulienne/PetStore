@@ -47,7 +47,7 @@ public class Pet {
                 .statusCode(200)
                 .body("name", is ("Biluvi"))
                 .body("status" , is("available"))
-                .body("category.name", is("dog")) //quando não vem entre colchetes os valores
+                .body("category.name", is("dog")) //quando os valores nao vem em colchetes
                 .body("tags.name", contains("sta"))  // quando os valores vem em colchetes
         ;
 
